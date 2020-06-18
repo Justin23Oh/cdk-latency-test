@@ -24,7 +24,7 @@ This project uses 'CDK' & 'TypeScript' language. So you should prepare prerequis
    - keypairname : EC2 keypair used in a test instances
    - ddbname : This CDK project will make one dynamodb table. This table can control the test operation. (STOP/START) and also stores the test results. 
 3. Use 'cdk deploy' command. 
-   ex : cdk deploy -c bucketname=pingtestsomething -c keypairname=example.pem -c ddbname=pingtestddb
+   ex : cdk deploy -c bucketname=pingtestsomething -c keypairname=example_key_name -c ddbname=pingtestddb
 
 4. After deployment, you can see one dynamodb table name of which includes 'AzLatencyTestStack...' keyword.
 5. Open it in the ddb console, in "Items" tab, you can see the current status record and all private IPs used in each test instance.
